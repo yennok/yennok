@@ -1,0 +1,440 @@
+/*   
+Theme Name: Yennok Theme
+Theme URI: 
+Description: Use this theme to start your Thematic Child Theme development.
+Author: Nir Yenni
+Author URI: http://www.yennok.com/
+Template: thematic
+Version: 2.0
+Tags: Thematic
+.
+Thematic is © Ian Stewart http://themeshaper.com/
+.
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+
+/* Apply a basic layout */
+@import url('../thematic/library/layouts/2c-r-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('../thematic/library/styles/default.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+
+
+body{
+	background-color:white;font-family:DejaVuSerif,andale mono, lucida sans typewriter;font-size:12px;}
+a:link{color:black;text-decoration:none;}
+a:visited{color:black;text-decoration:none;}
+a:hover{color:white;background-color:#00ff84;}
+a:active{color:white;background-color:black;}
+
+
+
+.aside{color:black}
+.aside li{list-style-type:circle;}
+a:visited#blog-title{color:white;}
+h1, h2, h3, h4, h5, h6, #blog-description {color:black;}
+.entry-utility{color:black;}
+.entry-meta {color:black;}
+
+.entry-title {font-family:DejaVuSerif,andale mono, lucida sans typewriter;font-size:13px;font-weight:normal;
+
+}
+
+#blog-title a {color:#00ff84;margin-bottom:34px;position:relative;left:88px;}
+#blog-title{font-family: DejaVuSerif,andale mono,lucida sans typewriter;font-weight:normal;letter-spacing:-1px;}
+#primary{border:none}
+#blog-description {color:white;font-weight:bold;font-style:normal;font-size:14px;}
+#access{border-bottom:dotted 1px white}
+
+.windows .sf-menu a {
+	font-size: 15px;
+	padding:0;
+	margin-right:40px;
+	
+	
+	
+}
+
+.sf-menu a{color:black;background-color:white;border:none;font-size:15px;}
+.sf-menu a:link{color:black;font-size:15px;}
+.sf-menu a:visited{color:black;font-size:15px;}
+.sf-menu a:hover{color:white;background-color:#00ff84;font-size:15px;}
+.sf-menu a:active{color:white;background-color:black;font-size:15px;}
+.sf-menu {border:none;}
+.sf-menu {font-size:16px;}
+
+#s{font-family:DejaVuSerif,andale mono,lucida sans typewriter ;}
+#footer {border-top:dotted 1px white;}
+#siteinfo {color:white;font-weight:bold}
+#siteinfo a:link {color:white;} 
+.menu {border:none;}
+#page-nav {font-size:16px;}
+
+/* Works Menu */
+#branding{
+	width:100%;
+	margin:0;
+	margin-left:74px;
+	
+}
+
+
+.works-menu, .works-menu * {
+	clear:both;
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+		
+}
+.works-menu {
+	line-height:	1.0;
+	
+}
+.works-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			10em; /* left offset of submenus need to match (see below) */
+    border-left:1px solid #fff;
+
+
+}
+.works-menu ul li {
+	width:			100%;
+}
+.works-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.works-menu li {
+	float:			left;
+	position:		relative;
+}
+.works-menu a {
+	display:		block;
+	position:		relative;
+}
+.works-menu li:hover ul,
+.works-menu li.sfHover ul {
+	left:			0;
+	top:			2.5em; /* match top ul list item height */
+	z-index:		99;
+}
+ul.works-menu li:hover li ul,
+ul.works-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.works-menu li li:hover ul,
+ul.works-menu li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+ul.works-menu li li:hover li ul,
+ul.works-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.works-menu li li li:hover ul,
+ul.works-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+
+/*** THEMATIC SKIN ***/
+.works-menu {
+    border-left:1px solid #000;
+    padding-left:8px;
+	float:left;
+	position:fixed;
+	left:65px;
+	/*top:52%*/
+	top:45%;
+	margin-top:45px;
+	
+	
+
+}
+.ie6 .works-menu {
+	margin-bottom: -1px;
+}
+.works-menu a {
+	border:none;
+	padding:0;
+	text-decoration:none;
+}
+.windows .works-menu a {
+	font-size: 15px;
+	padding:0;
+}
+.works-menu .current_page_item a,
+.works-menu .current_page_ancestor a,
+.works-menu .current_page_parent a {
+    border-bottom-color:#000;
+}
+.works-menu a, .works-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#000;
+
+}
+.works-menu li {
+	background:		white;
+	margin-bottom:5px;
+	vertical-align:top;
+}
+
+.works-menu li.last {
+	background:		white;
+	margin-bottom:0px;
+	vertical-align:top;
+}
+
+.works-menu li li {
+	background:		#fff;
+}
+.works-menu li li li {
+	background:		#9AAEDB;
+}
+.works-menu li:hover, .works-menu li.sfHover,
+.works-menu a:focus, .works-menu a:hover, .works-menu a:active {
+    background:     #00ff84;
+	outline:		0;
+    border-bottom-color:#ccc;
+}
+.works-menu ul {
+    border-left:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    
+}
+.works-menu li:hover ul,
+.works-menu li.sfHover ul {
+	top:32px; /* overriding essential styles */
+}
+.works-menu ul ul {
+    margin-top:0;
+}
+.works-menu ul a {
+    background:#fafafa;
+	border-bottom:none;
+}
+.works-menu ul a:hover {
+    color: #00ff84;
+}
+
+a:hover, .works-menu a:active {background-color: #00ff84;}
+
+.entry-title a:active, .entry-title a:hover {color:black;}
+
+a:hover.nonen {background-color:white;}
+.niros{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.pook {position:relative;}
+
+.about {font-size:13px;line-height:18px;}
+
+
+#branding { margin-top:65px;padding-top:0;
+
+}
+
+#blog-title { margin-bottom:35px;
+
+}
+
+#header {position:fixed;}
+
+
+#blog-title a{
+  background: url("img/logo.png");
+  display: block;
+  height: 29px;
+  text-indent: -99999px;
+  width: 101px;
+}
+
+#main
+{
+	position:absolute;
+	/*top:40%;*/
+	top:45%;
+	left:162px;
+	padding: 0 0 22px 0;
+}
+
+#content
+{margin:0;		}
+
+
+
+.entry-content .wp-post-image {
+	border: 0px solid #ccc;
+/*float:left;*/
+
+	margin: 0 40px 0px 0px;
+	padding: 10px;
+	padding-bottom:50px;
+	background-color:#00ff84;
+	
+}
+
+.entry-content {display:inline;
+}
+
+img.classname {
+}
+
+#content{
+		width:auto;
+		width:3328px;
+		
+}
+
+.entry-content .wp-post-image {
+	float:none;
+}
+
+#container{
+	width:auto;
+
+}
+
+.post{
+	display:inline;
+	float:left;
+	position:relative;
+}
+
+
+#main{
+			width:auto;
+
+}
+
+
+
+.containing {
+	position:absolute;
+	left:10px;
+	bottom:27px;
+	
+}
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on May 24, 2011 03:23:24 AM America/New_York */
+
+
+
+@font-face {
+    font-family: 'DejaVuSerif';
+    src: url('fonts/DejaVuSerif-webfont.eot');
+    src: url('fonts/DejaVuSerif-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DejaVuSerif-webfont.woff') format('woff'),
+         url('fonts/DejaVuSerif-webfont.ttf') format('truetype'),
+         url('fonts/DejaVuSerif-webfont.svg#DejaVuSerifBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DejaVuSerif';
+    src: url('fonts/DejaVuSerif-Italic-webfont.eot');
+    src: url('fonts/DejaVuSerif-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DejaVuSerif-Italic-webfont.woff') format('woff'),
+         url('fonts/DejaVuSerif-Italic-webfont.ttf') format('truetype'),
+         url('fonts/DejaVuSerif-Italic-webfont.svg#DejaVuSerifItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'DejaVuSerif';
+    src: url('fonts/DejaVuSerif-Bold-webfont.eot');
+    src: url('fonts/DejaVuSerif-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DejaVuSerif-Bold-webfont.woff') format('woff'),
+         url('fonts/DejaVuSerif-Bold-webfont.ttf') format('truetype'),
+         url('fonts/DejaVuSerif-Bold-webfont.svg#DejaVuSerifBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DejaVuSerif';
+    src: url('fonts/DejaVuSerif-BoldItalic-webfont.eot');
+    src: url('fonts/DejaVuSerif-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DejaVuSerif-BoldItalic-webfont.woff') format('woff'),
+         url('fonts/DejaVuSerif-BoldItalic-webfont.ttf') format('truetype'),
+         url('fonts/DejaVuSerif-BoldItalic-webfont.svg#DejaVuSerifBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'DejaVuSerifCondensed';
+    src: url('fonts/DejaVuSerifCondensed-webfont.eot');
+    src: url('fonts/DejaVuSerifCondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DejaVuSerifCondensed-webfont.woff') format('woff'),
+         url('fonts/DejaVuSerifCondensed-webfont.ttf') format('truetype'),
+         url('fonts/DejaVuSerifCondensed-webfont.svg#DejaVuSerifCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DejaVuSerifCondensed';
+    src: url('fonts/DejaVuSerifCondensed-Italic-webfont.eot');
+    src: url('fonts/DejaVuSerifCondensed-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DejaVuSerifCondensed-Italic-webfont.woff') format('woff'),
+         url('fonts/DejaVuSerifCondensed-Italic-webfont.ttf') format('truetype'),
+         url('fonts/DejaVuSerifCondensed-Italic-webfont.svg#DejaVuSerifCondensed') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'DejaVuSerifCondensed';
+    src: url('fonts/DejaVuSerifCondensed-Bold-webfont.eot');
+    src: url('fonts/DejaVuSerifCondensed-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DejaVuSerifCondensed-Bold-webfont.woff') format('woff'),
+         url('fonts/DejaVuSerifCondensed-Bold-webfont.ttf') format('truetype'),
+         url('fonts/DejaVuSerifCondensed-Bold-webfont.svg#DejaVuSerifCondensedBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DejaVuSerifCondensed';
+    src: url('fonts/DejaVuSerifCondensed-BoldItalic-webfont.eot');
+    src: url('fonts/DejaVuSerifCondensed-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DejaVuSerifCondensed-BoldItalic-webfont.woff') format('woff'),
+         url('fonts/DejaVuSerifCondensed-BoldItalic-webfont.ttf') format('truetype'),
+         url('fonts/DejaVuSerifCondensed-BoldItalic-webfont.svg#DejaVuSerifCnBdIt') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+/* Import Style.css */
+@import url('style.php');
+
+
+
+
