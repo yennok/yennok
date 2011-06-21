@@ -4,7 +4,6 @@
 //1. In This Part I take care of the menu of my website:
 //******************************************************
 
-
 // A. Add support for WP3 custom menus
 add_theme_support( 'nav-menus' );
 
@@ -73,6 +72,7 @@ add_filter('wp_nav_menu_items','addClassToLastMenuItem', 20, 1);
 
 //2. After taking care of the menus, I want to remove all unnecessary stuff from the page:
 //****************************************************************************************
+
 // A. Removing sidebar
 function remove_sidebar() {
 	remove_action('thematic_sidebar','remove_sidebar()');
